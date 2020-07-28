@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 //Import routes
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
+const businessRoute = require('./routes/business');
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use(express.json());
 //Routes middlewares
 app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
+app.use('/api/business', businessRoute);
 
 const PORT = process.env.PORT || 3000;
 
