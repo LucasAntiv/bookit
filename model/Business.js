@@ -14,7 +14,7 @@ const businessSchema = mongoose.Schema({
         max: 255
     },
     phone: {
-        type: BigInt,
+        type: Number,
         require: true,
     },
     email: {
